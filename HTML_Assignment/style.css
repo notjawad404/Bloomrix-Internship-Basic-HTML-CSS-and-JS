@@ -1,0 +1,33 @@
+th {
+    background-color: gray;
+  }
+  
+  input,
+  select {
+    margin: 2px;
+    padding: 4px;
+    width: 48%;
+  }
+  
+  #email-field,
+  #street-add {
+    width: 97%;
+  }
+  
+  #hi-school,
+  #college,
+  #university,
+  #email,
+  #phone {
+    width: 20px;
+  }
+  
+  #submit {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+  }
+  

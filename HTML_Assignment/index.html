@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <table border="1">
+      <tr>
+        <th> NAME </th>
+        <th> Subject </th>
+        <th> Marks </th>
+      </tr>
+      <tr>
+        <td rowspan="2"> Hillary </td>
+        <td> Advanced Web </td>
+        <td> 75 </td>
+      </tr>
+      <tr>
+        <td> Operating System </td>
+        <td> 60 </td>
+      </tr>
+      <tr>
+        <td rowspan="2"> Larry </td>
+        <td> Advanced Web </td>
+        <td> 80 </td>
+      </tr>
+      <tr>
+        <td> Operating System </td>
+        <td> 75 </td>
+      </tr>
+      <tr>
+  
+        <td></td>
+        <td> Average: 72.5 </td>
+        <td></td>
+      </tr>
+    </table>
+    <section>
+      <h1> Student Information Form </h1>
+      <form>
+        <label>Your Name</label><br>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <br><br>
+        <label>Level</label>
+        <br>
+        <input type="radio" id="hi-school" value="Hi School" />
+        <label for="hi-school">Hi School</label>
+        <input type="radio" id="college" value="College" />
+        <label for="college">College</label>
+        <input type="radio" id="university" value="University" />
+        <label for="university">University</label>
+        <br><br>
+        <label for="major">Major</label><br>
+        <select name="major[]" id="major" multiple>
+          <option value="programming">Programming</option>
+          <option value="data-science">Data Science</option>
+          <option value="data-structures">Data Structures</option>
+          <option value="operating-system">Operating System</option>
+          <option value="networking">Networking</option>
+  
+        </select>
+        <br>
+  
+        <label>Address</label><br>
+        <input type="text" placeholder="Street Address" id="street-add" /><br>
+        <input type="text" placeholder="City" />
+        <input type="text" placeholder="Region" /><br>
+  
+        <input type="number" placeholder="Postal Code" />
+  
+        <select name="major1" id="major1">
+          <option value="">Country</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Russia">Russia</option>
+          <option value="USA">USA</option>
+          <option value="Germany">Germany</option>
+          <option value="Spain">Spain</option>
+        </select>
+        <br>
+        <label for="Email">Email</label><br>
+        <input type="email" name="email" id="email-field" placeholder="Email" />
+        <br>
+        <label for="contact">Preferred method of contact</label><br>
+        <input type="checkbox" id="email" value="email" />
+        <label for="email">Email</label>
+        <input type="checkbox" id="phone" value="phone" />
+        <label for="phone">Phone</label>
+        <input type="checkbox" id="email" value="email" />
+        <label for="email">Email</label>
+        <br><br>
+        <input type="submit" id="submit" value="Send" />
+      </form>
+    </section>
+  
+  </body>
+  
+  
+</html>
