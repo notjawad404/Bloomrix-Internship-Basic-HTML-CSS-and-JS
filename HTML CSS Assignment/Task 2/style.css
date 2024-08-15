@@ -1,0 +1,48 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table th {
+  background-color: aqua;
+  color: red;
+  padding: 5px;
+}
+
+.th1 {
+  background-color: green !important;
+  color: white;
+}
+
+table td:nth-child(even),
+td:nth-child(even) {
+  background-color: lightgreen;
+  color: blue;
+  padding: 5px;
+}
+
+table td:nth-child(odd),
+td:nth-child(odd) {
+  background-color: wheat;
+  color: blue;
+  padding: 5px;
+}
+
+table td:nth-child(1),
+td:nth-child(1) {
+  background-color: gray;
+  color: blue;
+  padding: 5px;
+  text-align: start;
+}
+
+table tr:hover td:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+
+table tr:hover td {
+  background-color: green;
+}
