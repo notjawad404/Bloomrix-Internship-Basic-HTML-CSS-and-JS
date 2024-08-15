@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.main1{
+    width: 20%;
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main1 form{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchInput{
+    padding: 5px;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+#searchButton{
+    background-color: black;
+    color: white;
+}
+
+
+
+.main1 img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.linkSection{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+}
+
+.a1{
+    font-size:larger;
+    text-decoration:underline;
+    text-align: center;
+    color: blue;
+}
+
+.a2{
+    font-size: large;
+    color: white;
+    text-decoration:underline;
+    padding-top: 5px;
+}
+
+.main1List li{
+    list-style: none;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.main1List li a{
+    color: white;
+}
+
+.yellowText{
+    color: yellow !important; 
+}
+
+
+
+.main2{
+    width: 80%;
+    margin: 0;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.main2 img{
+    width: 100%;
+    height: 250px;
+}
+
+.main2 section{
+    padding: 20px;
+}
