@@ -17,16 +17,22 @@ body{
 .navbar ul{
     display: flex;
     flex-direction: row;
-    gap: 10px;
     list-style-type: none;
     margin: 0;
     padding: 20px;
 }
 
+.navbar ul li{
+    margin-right: 20px;
+}
+
 .navbar ul li a{
     font-size: 18px;
-    color: black;
+    color: white;
     text-decoration: none; 
+    font-size: larger;
+    font-weight: bold;
+
 }
 
 .navbar ul li a:hover{
@@ -44,6 +50,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 50px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.551);
 }
 
 .header img{
@@ -181,7 +188,6 @@ body{
     color: white;
     text-align: center;
     padding: 10px;
-    width: 100%;
 }
 
 
