@@ -1,0 +1,133 @@
+$color-red: red;
+$color-blue: blue;
+$color-white: white;
+$color-black: black;
+
+$font-arial: Arial, sans-serif;
+
+$box-shadow-blue: 2px 8px 20px blue;
+$box-border-black: 2px solid black;
+
+
+$margin-0: 0;
+$padding-0: 0;
+$margin-20: 20px;
+$padding-20: 20px;
+
+$width-full: 100%;
+
+@function rem($px) {
+    @return calc($px / 16) * 1rem;
+  }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-columns($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 20px;
+}
+
+%card-style {
+  background-color: $color-white;
+  color: $color-black;
+  border: $box-border-black;
+  border-radius: 10px;
+  padding: $padding-20;
+}
+
+body {
+  background-color: $color-red;
+  color: $color-white;
+  font-family: $font-arial;
+  @include flex-center;
+  flex-direction: column;
+  margin: $margin-0;
+}
+
+.navbar {
+  background-color: $color-black;
+  @include flex-center;
+  justify-content: space-between;
+  width: $width-full;
+
+  .navImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .navList {
+    list-style: none;
+    @include flex-center;
+    flex-direction: row;
+    gap: 10px;
+    padding: $padding-20;
+
+    li {
+      color: $color-white;
+      text-decoration: none;
+      font-size: larger;
+
+      &:hover {
+        color: $color-blue;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+    }
+  }
+}
+
+.header {
+  font-size: rem(32);
+  text-align: center;
+  padding: 20px;
+
+  @media (max-width: 1000px) {
+    font-size: medium;
+  }
+}
+
+.grid {
+  @include grid-columns(3);
+  padding: 20px;
+
+  .card {
+    @extend %card-style;
+    margin: 20px 10px;
+
+    &:hover {
+      transform: translateY(-40px);
+      box-shadow: $box-shadow-blue;
+    }
+
+    .cardImg {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    @include grid-columns(2);
+
+    .card {
+      border-radius: 5px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    @include grid-columns(1);
+  }
+}
+
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  width: $width-full;
+}
