@@ -1,0 +1,31 @@
+$red-color: red;
+$blue-color: blue;
+$white-color: white;
+$black-color: black;
+
+$margin-0: 0px;
+$margin-10: 10px;
+$margin-20: 20px;
+
+
+// Function to convert px value to rem value
+@function rem($px) {
+    @return calc($px / 16) * 1rem;
+  }
+  
+
+body{
+    background-color: $red-color;
+}
+
+h1{
+    color: $blue-color;
+    font-size: rem(32);
+}
+
+p{
+    color: $white-color;
+    margin: $margin-20;
+    font-size: rem(16);
+}
+
