@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formSection{
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+form button{
+    width: 50%;
+    margin: auto;
+}
