@@ -1,0 +1,136 @@
+body{
+    overflow-y: auto;
+    height: 100vh;
+    background-color: rgb(32, 28, 28);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    padding: 20px 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.todo-form{
+    display: flex;
+}
+
+input, button{
+    background: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.todo_checkbox{
+    margin: 20px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+}
+
+#add-input{
+    flex: 1 1 0%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 1rem;
+    margin-right: 20px; 
+}
+
+#add-button{
+    color: white;
+    padding: 10px;
+    font-size:large;
+    font-weight: bold;
+}
+
+#add-button:hover{
+    color: red;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 20px 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0px auto;
+    color: black;
+}
+
+main section h2{
+    color: white;
+}
+
+.todo-list{
+    padding: 20px;
+}
+
+.todo-input{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: red;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.list{
+    width: 100%;
+}
+
+.todo-text{
+    font-size: medium;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.todo-text.strikethrough{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.actions{
+    display: flex;
+    margin-top: 0 -0.5rem;
+    margin-left: 10px;
+}
+
+.actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.edit-button{
+    color: green;
+}
+
+.delete-button{
+    color: darkblue;
+}
+
+.edit-button:hover{
+    color: lightgreen;
+}
+
+.delete-button:hover{
+    color: lightblue;
+}
