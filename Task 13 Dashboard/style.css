@@ -1,7 +1,9 @@
 body {
-    background: aqua;
+  background-color: gainsboro;
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow-y: auto;
   }
   
   .container {
@@ -15,6 +17,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    overflow-y: auto;
   }
   
   nav ul {
@@ -99,6 +102,10 @@ body {
     border: none;
   }
 
+  .card button:hover {
+    background: blue;
+  }
+
   
   .courses {
     margin-top: 30px;
@@ -150,22 +157,58 @@ body {
     border: none;
     cursor: pointer;
   }
-  
 
-
-  /* Simple fade-in animation for the container */
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  .course-box button:hover {
+    background: white;
+    color: black;
   }
-  
+
+  /* Responsive Styles */
+@media screen and (max-width: 1000px) {
+  nav {
+    width: 220px;
+  }
+
+  .skills-grid,  .course-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    left: -280px;
+    z-index: 100;
+  }
+
+  .container.active nav {
+    left: 0;
+  }
+
   .container {
-    animation: fadeIn 1s ease-in;
+    flex-direction: column;
   }
+
+  .main {
+    padding-top: 60px;
+  }
+
+  .skills-grid,   .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-header{
+    justify-content: center;
+  }
+  .course-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+  
   
   /* Slide-in animation for the sidebar */
   @keyframes slideIn {
@@ -195,23 +238,6 @@ body {
     animation: hoverLink 0.3s forwards;
   }
   
-  /* Pulse animation for buttons */
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .card button:hover, .course-box button:hover {
-    animation: pulse 0.5s infinite;
-  }
-  
   /* Bounce-in animation for cards */
   @keyframes bounceIn {
     0% {
@@ -233,4 +259,3 @@ body {
   .card, .course-box {
     animation: bounceIn 1s ease-out;
   }
-  
